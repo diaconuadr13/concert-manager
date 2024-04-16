@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="pojo.Concert" table="concerte" catalog="mihnea" optimistic-lock="version">
+        <id name="idconcert" type="java.lang.Long">
+            <column name="idconcert" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="muzician" class="pojo.Muzician" fetch="select">
+            <column name="idmuzician" />
+        </many-to-one>
+        <many-to-one name="stilmuzical" class="pojo.StilMuzical" fetch="select">
+            <column name="idstil" />
+        </many-to-one>
+        <property name="dataconcert" type="date">
+            <column name="dataconcert" />
+        </property>
+        <property name="locatie" type="string">
+            <column name="locatie" length="255" />
+        </property>
+        <property name="altedetalii" type="string">
+            <column name="altedetalii" length="255" />
+        </property>
+    </class>
+</hibernate-mapping>
