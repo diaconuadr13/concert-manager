@@ -17,10 +17,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import pojo.Muzician;
 import DAOImpl.MuzicieniDaoImpl;
 
-/**
- *
- * @author vali
- */
+
 public class MuzicieniController extends HttpServlet {
 
 	Muzician muzician = new Muzician();

@@ -12,10 +12,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import pojo.StilMuzical;
 import DAOImpl.StiluriMuzicaleDaoImpl;
 
-/**
- *
- * @author vali
- */
+
 public class StiluriMuzicaleController extends HttpServlet {
 
 	StilMuzical stilmuzical = new StilMuzical();
