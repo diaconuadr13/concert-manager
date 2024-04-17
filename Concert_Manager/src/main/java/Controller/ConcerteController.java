@@ -29,7 +29,6 @@ public class ConcerteController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		if (request.getParameter("adaugaConcert") != null) {
-			// preluarea parametrilor de interes
 			Long idmuzician = java.lang.Long.parseLong(request.getParameter("idmuzician"));
 			Long idstil = java.lang.Long.parseLong(request.getParameter("idstil"));
 			Session session = HibernateUtil.getSessionFactory().openSession();
@@ -74,7 +73,6 @@ public class ConcerteController extends HttpServlet {
 
 		if (request.getParameter("modificaConcert") != null) {
 			Long id1 = Long.parseLong(request.getParameter("idconcert"));
-			// preluarea parametrilor de interes
 			Long idmuzician = java.lang.Long.parseLong(request.getParameter("idmuzician"));
 			Long idstil = java.lang.Long.parseLong(request.getParameter("idstil"));
 			Session session = HibernateUtil.getSessionFactory().openSession();
@@ -112,11 +110,7 @@ public class ConcerteController extends HttpServlet {
 		}
 	}
 
-	/**
-	 * Returns a short description of the servlet.
-	 *
-	 * @return a String containing servlet description
-	 */
+
 	@Override
 	public String getServletInfo() {
 		return "Short description";

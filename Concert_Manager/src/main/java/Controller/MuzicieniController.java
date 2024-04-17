@@ -34,7 +34,6 @@ public class MuzicieniController extends HttpServlet {
 			try {
 				datanasterii = df.parse(request.getParameter("datanasterii"));
 			} catch (ParseException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			String taraorigine = request.getParameter("taraorigine");
@@ -71,7 +70,6 @@ public class MuzicieniController extends HttpServlet {
 			try {
 				datanasterii = df.parse(request.getParameter("datanasterii"));
 			} catch (ParseException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			String taraorigine = request.getParameter("taraorigine");
@@ -95,11 +93,7 @@ public class MuzicieniController extends HttpServlet {
 		}
 	}
 
-	/**
-	 * Returns a short description of the servlet.
-	 *
-	 * @return a String containing servlet description
-	 */
+
 	@Override
 	public String getServletInfo() {
 		return "Short description";

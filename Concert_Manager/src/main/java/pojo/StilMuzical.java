@@ -9,7 +9,7 @@ public class StilMuzical implements java.io.Serializable {
     private String numestil;
     private String originestil;
     private String perioadapopularitate;
-    private Set<Concert> concertes = new HashSet<>(0); // Assuming 'concertes' is related to this class
+    private Set<Concert> concertes = new HashSet<>(0); 
 
     public StilMuzical() {
     }
